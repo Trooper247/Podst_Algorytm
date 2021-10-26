@@ -1,0 +1,33 @@
+# depslib dependency file v1.0
+1635248675 source:c:\users\student\documents\pondo\cw4_pondoo\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1635249289 source:c:\users\student\documents\pondo\cw4_pondoo\zad2.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+
+1635250189 source:c:\users\student\documents\pondo\cw4_pondoo\zad3.c
+	<stdio.h>
+	<stdlib.h>
+
+1635251067 source:c:\users\student\documents\pondo\cw4_pondoo\zad4.c
+	<stdio.h>
+	<stdlib.h>
+
+1635251445 source:c:\users\student\documents\pondo\cw4_pondoo\zad5.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+
+1635251582 source:c:\users\student\documents\pondo\cw4_pondoo\zad6.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+
+1635251698 source:c:\users\student\documents\pondo\cw4_pondoo\zad7.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+
