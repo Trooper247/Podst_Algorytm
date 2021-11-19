@@ -31,6 +31,21 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="ZAD2.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ZAD3.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ZAD4.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ZAD5.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ZAD6.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>

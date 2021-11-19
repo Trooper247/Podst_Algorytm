@@ -1,0 +1,31 @@
+# depslib dependency file v1.0
+1637350380 source:c:\users\peron\documents\github\podst_algorytm\pondo\laborki7\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+
+1637350255 source:c:\users\peron\documents\github\podst_algorytm\pondo\laborki7\zad2.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1637350326 source:c:\users\peron\documents\github\podst_algorytm\pondo\laborki7\zad3.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1637350346 source:c:\users\peron\documents\github\podst_algorytm\pondo\laborki7\zad4.c
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+
+1637350363 source:c:\users\peron\documents\github\podst_algorytm\pondo\laborki7\zad5.c
+	<stdio.h>
+	<stdlib.h>
+
+1637350445 source:c:\users\peron\documents\github\podst_algorytm\pondo\laborki7\zad6.c
+	<stdio.h>
+	<ctype.h>
+	<string.h>
+
