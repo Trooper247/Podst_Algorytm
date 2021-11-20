@@ -46,6 +46,12 @@
 		<Unit filename="ZAD6.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="ZAD7.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ZAD8.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>

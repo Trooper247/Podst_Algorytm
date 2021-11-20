@@ -6,7 +6,7 @@ char str[20];
 char abc[37] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ?1234567809";
 char num[10] = "1234567890";
 int n;
-int main() {
+int main6() {
     puts("Podaj tekst wejsciowy");
     fgets(str,19,stdin);
     puts("Podales: ");
