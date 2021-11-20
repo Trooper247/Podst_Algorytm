@@ -21,19 +21,15 @@ int main() {
     puts("\n");
     for(int i=0;str[i] != '\0';i++){
         for(int k=0;abc[k] != '\0';k++){
-            if(str[i] == '?')puts("jest M");
+            if(str[i] == '?')puts("jest cyfra");
             if(str[i] == abc[k]){
                 n=1;
                 puts("jest w abc\n");
-                continue;
-            }else{
-                if(n==0)str[i]='#';
-                //puts("nie ma w abc\n");
             }
-            n=0;
-
         }
+        if(n==0)str[i]='#';
+        n=0;
     }
-    puts(str);
+    for(int i=0;str[i] != '\0';i++)printf("%c ", str[i]);
     return 0;
 }
