@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1637671212 source:c:\users\student\documents\pondo\lab8\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+
