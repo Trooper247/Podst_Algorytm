@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1642363541 source:c:\users\peron\documents\github\podst_algorytm\pondo\laborki12\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
