@@ -1,0 +1,6 @@
+Marka: Ford
+Marka: Ford
+Model: Fiesta
+Cena: 2137
+Rocznik: 1996
+Przebieg: 450000
