@@ -108,7 +108,45 @@ int main()
         }
     }
     fclose(zlomy);
+    /////////////////////////ZAD 4
+    FILE *foo;
+    foo=fopen("Wykaz_z_zlomowisk.txt","r");
+    int n = 0;
+    char new_message[40];
+    char new_bufor;
+    if(plik == NULL){
+        printf("\nSomething's not right, I can feel it...");
+    }else{
+        printf("\nReading Your zlomowisko Sir!");
+        while(fscanf(foo,"%c", &new_bufor) != EOF){
+                while(fscanf(foo,"%c", &new_bufor) != '\n'){
+                    new_message[n] = new_bufor;
+                    n++;
+                }
+                char *does_it = strstr(*new_message,"T");
+                if(does_it)printf("Helooooooooooo");
 
+
+        }
+        printf("\nYour letter Sir!: \n");
+    }
+    fclose(plik);
+
+    for(int i = 0; i<20;i++){
+        printf("%c", message[i]);
+    }
+
+    kopia=fopen("Wykaz_z_zlomowisk.txt","w");
+    if(kopia == NULL){
+        printf("\nSomething's not right, I can feel it...");
+    }else{
+        puts("\nRewriting Your letter Sir!");
+        for(int i = 0;i<(sizeof message/sizeof *message);i++){
+                fprintf(kopia,"%c",message[i]);
+        }
+        printf("\nYour Letter Sir, has been written!");
+    }
+    fclose(kopia);
 
 
     return 0;
