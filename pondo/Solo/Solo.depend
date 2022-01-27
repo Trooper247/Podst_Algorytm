@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1643062529 source:c:\users\peron\documents\github\podst_algorytm\pondo\solo\main.c
+	<stdio.h>
+	<stdlib.h>
+

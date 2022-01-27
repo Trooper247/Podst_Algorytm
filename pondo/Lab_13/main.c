@@ -77,7 +77,6 @@ int main()
         printf("\nSomething's not right, I can feel it...");
     }else{
             fprintf(zlom,"Marka: %s\n",autko.Marka);
-            fprintf(zlom,"Marka: %s\n",autko.Marka);
             fprintf(zlom,"Model: %s\n",autko.Model);
             fprintf(zlom,"Cena: %d\n",autko.Cena);
             fprintf(zlom,"Rocznik: %d\n",autko.Rocznik);
@@ -100,7 +99,6 @@ int main()
             printf("\nSomething's not right, I can feel it...");
         }else{
                 fprintf(zlomy,"Marka: %s\n",autka[i].Marka);
-                fprintf(zlomy,"Marka: %s\n",autka[i].Marka);
                 fprintf(zlomy,"Model: %s\n",autka[i].Model);
                 fprintf(zlomy,"Cena: %d\n",autka[i].Cena);
                 fprintf(zlomy,"Rocznik: %d\n",autka[i].Rocznik);
@@ -110,43 +108,55 @@ int main()
     fclose(zlomy);
     /////////////////////////ZAD 4
     FILE *foo;
+    FILE *copy;
     foo=fopen("Wykaz_z_zlomowisk.txt","r");
+    copy=fopen("Wykaz_z_zlomowisk_copy.txt","w");
+
+
     int n = 0;
     char new_message[40];
-    char new_bufor;
-    if(plik == NULL){
+    char new_bufor ;
+    char *comp;
+
+    if(foo == NULL){
         printf("\nSomething's not right, I can feel it...");
     }else{
-        printf("\nReading Your zlomowisko Sir!");
         while(fscanf(foo,"%c", &new_bufor) != EOF){
-                while(fscanf(foo,"%c", &new_bufor) != '\n'){
-                    new_message[n] = new_bufor;
-                    n++;
+            new_message[n] = new_bufor;
+            n++;
+            if(new_bufor == '\n'){
+                comp = strpbrk(new_message, "Tt");
+                if (comp == NULL){
+                //no tT in line
+                    memset(new_message,0,strlen(new_message));
+                    //puts(new_message);
+                    n = 0;
+                }else{
+                    puts("Found one!");
+                    if(copy == NULL){
+                        printf("\nSomething's not right, I can feel it...");
+                    }else{
+                        puts("\nCopying new_message to external file");
+                        for(int i = 0;i<40;i++){
+                            fprintf(copy,"%c",new_message[i]);
+                            printf("%c", new_message[i]);
+                        }
+                        memset(new_message,0,strlen(new_message));
+                        puts(new_message);
+                        n = 0;
+                    }
                 }
-                char *does_it = strstr(*new_message,"T");
-                if(does_it)printf("Helooooooooooo");
-
-
+            }
         }
-        printf("\nYour letter Sir!: \n");
     }
-    fclose(plik);
+    fclose(foo);
 
-    for(int i = 0; i<20;i++){
-        printf("%c", message[i]);
-    }
 
-    kopia=fopen("Wykaz_z_zlomowisk.txt","w");
-    if(kopia == NULL){
-        printf("\nSomething's not right, I can feel it...");
-    }else{
-        puts("\nRewriting Your letter Sir!");
-        for(int i = 0;i<(sizeof message/sizeof *message);i++){
-                fprintf(kopia,"%c",message[i]);
-        }
-        printf("\nYour Letter Sir, has been written!");
-    }
-    fclose(kopia);
+
+
+
+    fclose(copy);
+    ////////////////////
 
 
     return 0;

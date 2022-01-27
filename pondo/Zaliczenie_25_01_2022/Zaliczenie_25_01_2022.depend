@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1643111905 source:c:\users\peron\documents\github\podst_algorytm\pondo\zaliczenie_25_01_2022\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<windows.h>
+
